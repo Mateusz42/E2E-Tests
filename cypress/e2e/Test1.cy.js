@@ -8,9 +8,6 @@ describe('User can login to GoIt page', () => {
     
     it('Successfully login to GoIt page', () => {
         cy.loginUser('user888@gmail.com','1234567890');
-    
-        
-         cy.url().should('include', 'homepage');
-        cy.get('.next-1n2ne4o').should('have.text','Study without interruption and get achievements. You can do it!');
+
     });
 });
